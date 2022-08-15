@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+.container-grid {
+  display: grid;
+  background-color: #18a0fb;
+  grid-template-columns: 50% 50%;
+}
+
+.sub-container-grid {
+  display: grid;
+  background-color: #18a0fb;
+  grid-template-columns: 25% 75%;
+  row-gap: 20px;
+}
+
+.input-text {
+  background: white;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 15px;
+  height: 35px;
+  width: 350px;
+  padding-left: 10px;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-style: normal;
+  text-align: left;
+}
+
+.enter-btn {
+  background: white;
+  color: #18a0fb;
+  border: 0px;
+  border-radius: 3px;
+  width: 125px;
+  height: 30px;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+}
+
+  .enter-btn:hover {
+    background-color: white;
+    color: #18a0fb;
+  }
+
+  .enter-btn:active {
+    transform: translateY(4px);
+  }
+
+  .enter-btn:focus {
+    background-color: white;
+    color: #18a0fb;
+  }
+
+label {
+  color: white;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-style: normal;
+  text-align: left;
+  margin-right: 40px;
+}
+
+.login-h1 {
+  background-color: transparent;
+  color: white;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.login-h2 {
+  background-color: transparent;
+  color: white;
+  font-family: 'Roboto';
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 25px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.logo-image {
+  width: auto;
+  height: auto;
+  border: 0;
+}

@@ -1,0 +1,13 @@
+[
+    {
+        "title": "Sudeste Steel",
+        "icon": "bi bi-list",
+        "childrens": [
+            {
+                "title": "Ligotamento Contínuo",
+                "icon": "bi bi-distribute-horizontal",
+                "path": "/components/overview"
+            }
+        ]
+    }
+]

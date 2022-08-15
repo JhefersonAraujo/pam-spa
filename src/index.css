@@ -1,13 +1,214 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-family: 'Roboto';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main{
+  display: flex;
+  height: 100vh;
+}
+
+.container{
+  flex-grow: 1;
+  padding: 0;
+  background-color: #f2f2f2;
+  background-size: cover;
+  background-position: center;
+  /*display: flex;*/
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.title{
+  font-size: 3em;
+}
+
+.info{
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 1.5em;
+  color: rgb(224, 224, 224);
+}
+
+.sidebar{
+  width: 260px;
+  flex-shrink: 0;
+  background-color: white;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar-item{
+  padding: .75em 1em;
+  display: block;
+  transition: background-color .15s;
+  border-radius: 5px;
+}
+
+.sidebar-item:hover{
+  background-color: #f2f2f2;
+}
+
+.sidebar-title{
+  display: flex;
+  font-size: 1.2em;
+  color: black;
+  justify-content: space-between;
+}
+
+.sidebar-title span i{
+  display: inline-block;
+  width: 1.5em;
+}
+
+.sidebar-title .toggle-btn{
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.sidebar-item.open > .sidebar-title .toggle-btn{
+  transform: rotate(180deg);
+}
+
+.sidebar-content{
+  padding-top: .25em;
+  height: 0;
+  overflow: hidden;
+}
+
+.sidebar-item.open > .sidebar-content{
+  height: auto;
+}
+
+.sidebar-item.plain{
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar-item.plain:hover{
+  text-decoration: underline;
+}
+
+.sidebar-item.plain i{
+  display: inline-block;
+  width: 1.7em;
+}
+
+.overview-header {
+  font-size: 26px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.ic-btn {
+	background-color: #48abe0;
+	color: white;
+	border: none;
+	font-size: 31px;
+	height: 100px;
+	width: 100px;
+	box-shadow: 0 2px 4px darkslategray;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.ic-btn-big {
+	font-size: 30px;
+	height: 180px;
+	width: 180px;
+}
+
+.ic-btn-mid {
+	font-size: 25px;
+	height: 100px;
+	width: 100px;
+}
+
+.ic-btn-small {
+	font-size: 14px;
+	height: 50px;
+	width: 50px;
+}
+
+.ic-btn:active {
+	background-color: #48abe0;
+	box-shadow: 0 0 2px darkslategray;
+	transform: translateY(2px);
+}
+
+.ic-btn:not(:first-child) {
+	margin-top: 10px;
+}
+
+.round {
+	border-radius: 70%;
+	margin: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+}
+
+.grid-container-details {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-container-details > div {
+  text-align: center;
+}
+
+.line {
+  border-bottom: 2px black;
+  display: block;
+}
+
+.vertical-line {
+  border-left: 3px black;
+  display: block;
+  height: 50px;
+  width: 1px;
+}
+
+.center {
+  margin: auto;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 5px;
+  width: 50%;
+  transition: all 0.2s ease-out;
+  background-color: 0xfff;
+  border-left: 50px solid red;
+  font-size: 14px;
+  font-family: 'Roboto';
+  margin-top: 10px;
+}
+
+.card-value {
+  margin-left: -40px;
+  font-size: 16;
+  color: white;
+  text-align: left;
+}
+
+.card-name {
+  font-size: 14;
+  color: black;
+  float: right;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
 }
