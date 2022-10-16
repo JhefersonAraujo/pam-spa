@@ -8,6 +8,7 @@ const IcDetail = ({title}) => {
           <div>
             <div>
               <button class="ic-btn ic-btn-small round">97%</button>
+              <p>Transferência</p>
             </div>
             <Card value="94" label="Válvula Gaveta"/>
           </div>
@@ -15,6 +16,7 @@ const IcDetail = ({title}) => {
           <div>
             <div>
               <button class="ic-btn ic-btn-small round">97%</button>
+              <p>Distribuição</p>
             </div>
             <Card value="93" label="Distribuidor"/>
           </div>
@@ -22,6 +24,7 @@ const IcDetail = ({title}) => {
           <div>
             <div>
               <button class="ic-btn ic-btn-small round">97%</button>
+              <p>Ligotamento</p>
             </div>
             <Card value="81" label="Mesa Osciladora"/>
             <Card value="99" label="Molde"/>

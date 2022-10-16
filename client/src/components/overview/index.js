@@ -1,9 +1,17 @@
+import React from 'react';
 import { useState } from 'react';
 import { Header } from '../header';
 import IcDetail from '../ic-details';
 
 export default function Overview() {
     const [active, setActive] = useState();
+    const [data, setData] = React.useState(null);
+
+    React.useEffect(() => {
+        fetch("/api")
+          .then((res) => res.json())
+          .then((data) => setData(data.message));
+      }, []);
 
     return(
         <>

@@ -1,0 +1,38 @@
+[
+    {
+        "indexes": [
+            {
+                "title": "ICA",
+                "dimensions": [
+                    {
+                        "dim": "Transferência",
+                        "subdimensions" : [
+                            {
+                                "name": "Válvula Gaveta",
+                                "value" : "98"
+                            }
+                        ]
+                    },
+                    {
+                        "dim": "Distribuição",
+                        "subdimensions" : [
+                            {
+                                "name": "Distribuidor",
+                                "value" : "98"
+                            }
+                        ]
+                    },
+                    {
+                        "dim": "Ligotamento",
+                        "subdimensions" : [
+                            {
+                                "name": "Mesa Osciladora",
+                                "value" : "89"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
